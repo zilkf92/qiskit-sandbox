@@ -1,4 +1,8 @@
-qiskit
+qiskit == 0.37.2
 qiskit[visualization]
-graphviz
-black
+graphviz == 0.20.1
+black == 22.8.0
+numpy == 1.23.2
+matplotlib == 3.5.3
+# ipykernel needed to add venv to jupyter notebook
+ipykernel
