@@ -3,12 +3,12 @@ import numpy as np
 from qiskit import QuantumCircuit
 from qiskit.compiler import transpile
 from qiskit.providers.aer import QasmSimulator
+from qiskit.circuit.library.basis_change import qft
 
 
 simulator = QasmSimulator()
 
-circ = QuantumCircuit(3)
-circ.ccx(0, 1, 2)
+circ = qft.QFT(9)
 print(circ)
 
 basis_gates = ["rz", "rx", "h", "cz", "cx"]
